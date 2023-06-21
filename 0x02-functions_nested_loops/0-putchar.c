@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main.h >> is checking the code
- * always Return with >> 0
+ * main - Is the entry point of the program.
+ * Return: Always 0 ( successful )
 */
 
 int main(void)
