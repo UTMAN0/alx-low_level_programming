@@ -21,7 +21,7 @@ int main(void)
 			T_S += S;
 
 		x = o;
-		j = S;
+		o = S;
 	}
 	printf("%.0f\n", T_S);
 
