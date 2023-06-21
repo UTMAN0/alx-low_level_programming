@@ -23,7 +23,7 @@ int o, a, r;/*o represents the first number in each multiplication
 				_putchar(',');
 				_putchar(' ');
 
-				z = o * a;
+				r = o * a;
 
 				if (r <= 99)
 					_putchar(' ');
