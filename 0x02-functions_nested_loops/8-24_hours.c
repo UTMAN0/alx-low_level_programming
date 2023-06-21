@@ -12,7 +12,7 @@ int i, j;   /*a represent houres and b represent minutes */
 i = 0;
 	while (i <= 23)
 	{
-		for (j = 0; j <= 59; b++)
+		for (j = 0; j <= 59; j++)
 		{
 			_putchar((i / 10) + '0');
 			_putchar((i % 10) + '0');
