@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet variable - Is printing the alphabet
+ * print_alphabet - Is printing the alphabet
  * Return: void
  */
 void print_alphabet(void)
