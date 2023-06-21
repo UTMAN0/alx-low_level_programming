@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * always Return with: 0
+ * main is checking the code
 */
 
 int main(void)
