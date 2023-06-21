@@ -1,47 +1,24 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_times_table - this will rints the times table of the input,
- *                     starting with 0.
- * @n: This is The value of the times table to be printed.
+ * main - This Lists all the natural numbers below 1024.
+ *        that are multiples of 3 or 5.
+ *
+ * Return: Always 0
  */
-void print_times_table(int n)
+int main(void)
 {
-int o, a, r;/*o represents the first number in each multiplication
-							* operation, a represents the second number
-							* r represents the result of the multiplication.
-							*/
+	int x, y = 0;
 
-	if (n >= 0 && n <= 15)
+	for (x = 0; x < 1024; x++)
 	{
-		for (o = 0; o <= n; o++)
-		{
-			_putchar('0');
-
-			for (a = 1; a <= n; a++)
-			{
-				_putchar(',');
-				_putchar(' ');
-
-				r = o * a;
-
-				if (r <= 99)
-					_putchar(' ');
-				if (r <= 9)
-					_putchar(' ');
-
-				if (r >= 100)
-				{
-					_putchar((r / 100) + '0');
-					_putchar(((r / 10)) % 10 + '0');
-				}
-				else if (r <= 99 && r >= 10)
-				{
-					_putchar((r / 10) + '0');
-				}
-				_putchar((r % 10) + '0');
-			}
-			_putchar('\n');
-		}
+		if ((x % 3) == 0 || (x % 5) == 0)
+			y += x; /** += means variable += value; so we want to increment y by
+								* x
+								*/
 	}
+
+	printf("%d\n", y);
+
+	return (0);
 }
