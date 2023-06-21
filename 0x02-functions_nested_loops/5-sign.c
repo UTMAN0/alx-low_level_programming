@@ -2,7 +2,6 @@
 /**
  * print_sign - Is a function that print the sign of a number.
  * 
- * 
  * @n: Is the number of the sign that will be printed.
  *
  * Return:	1 if the number is positif:
