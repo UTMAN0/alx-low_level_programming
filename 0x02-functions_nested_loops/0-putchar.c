@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * main - check the code
- * Return: always 0
+ * always Return with: 0
 */
 
 int main(void)
