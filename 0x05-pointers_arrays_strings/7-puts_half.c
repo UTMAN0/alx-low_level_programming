@@ -14,7 +14,7 @@ void puts_half(char *str)
 {
 	int c;
 
-	for (c = 0; str[c] != '\0'; i++)
+	for (c = 0; str[c] != '\0'; c++)
 
 	/* Move the index c to the middle of the string*/
 	c++;
