@@ -1,18 +1,27 @@
 #include "main.h"
 
 /**
- * _isupper -  function that checks for uppercase character.
+ * _strcat - This function that will concatenates.
+ *          two strings.
  *
- * @c: character to check
+ * @dest: pointer to destnation input.
+ * @src: pointer to source input.
  *
- * Return: 1 if c is uppercase
- *			0 otherwise
+ * Return: pointer to resulting string @dest.
 */
 
-int _isupper(int c)
+char *_strcat(char *dest, char *src)
 {
-		if (c >= 'A' && c <= 'Z')
-			return (1);
-		else
-			return (0);
+	int deslen = 0;
+	int srclen = 0;
+	int yx;
+
+for (yx = 0; dest[yx] != '\0'; yx++)
+	deslen++;
+for (yx = 0; src[yx] != '\0'; yx++)
+	srclen++;
+for (yx = 0; yx <= srclen; yx++)
+	dest[deslen + yx] = src[yx];
+
+return (dest);
 }
