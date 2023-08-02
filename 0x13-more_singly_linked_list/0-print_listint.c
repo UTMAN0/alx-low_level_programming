@@ -1,23 +1,25 @@
 #include "lists.h"
 
 /**
- * print_listint - function that prints all the elements of a listint_t list
- * @h: pointer to the listint_t
+ * print_listint - Prints all the elements of
+ *				a listint_t list recursively.
  *
- * Return: Number of nodes
+ * @h: Pointer to the head node of the list.
+ *
+ * Return: The number of nodes in the list.
+ *
+ *	my logic for the code:
+ * i will be using recursion
+ * we give a condition to abase case
+ * then we print the data of the current node
+ * and recursive call to print the remaining nodes
+ * and return the count
  */
-
 size_t print_listint(const listint_t *h)
 {
-	size_t nodes = 0;
+		if (h == NULL) /*empty list*/
+			return (0);
 
-	if (h == NULL)
-		return (0);
-	while (h != NULL)
-	{
-		printf("%d\n", h->n);
-		h = h->next;
-		nodes++;
-	}
-	return (nodes);
+	printf("%d\n", h->n);
+		return (1 + print_listint(h->next));
 }
